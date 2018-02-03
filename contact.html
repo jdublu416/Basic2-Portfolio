@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+    <meta charset="utf-8">
     <title>Contact</title>
     <link rel= "stylesheet" href="assets/css/reset.css">
     <link rel= "stylesheet" href= "assets/css/style.css" type= "text/css">
@@ -9,14 +11,14 @@
 </head>
 
 <body>
-
+        <div>
         <header>
-                <h1>Janet Warren</h1>
+                <h1 class="lfloat">Janet Warren</h1>
     
-                <nav>
+                <nav class="rfloat">
                     <ul>
-                        <li><a href= "index.html">About</a></li>
-                        <li><a href= "portfolio.html">Portfolio</a></li>
+                        <li><a href= "index.html">About</a>|</li>
+                        <li><a href= "portfolio.html">Portfolio</a>|</li>
                         <li><a href= "contact.html">Contact</a>
                         </li>
     
@@ -26,63 +28,75 @@
                 </nav>
     
         </header>
+    </div>
     
-        <section>
+        <section class="clear width2">
     
-                <div>
-                    <h2>Connect with Me</h2>
-    
-                    <img src= "assets/images/github-128.png" height= "50" width="50">
-    
-                    <img src= "assets/images/linkedin.png" height= "50" width="50">
-    
-                    <img src= "assets/images/overflow.png" height= "50" width="50">
-                </div>
+               <div class=" lfloat width1" >
+                <form class="form" method= "post" action= "#">
 
-                <form method= "post" action= "#">
+                    <h2 class="align">Contact</h2>
+
+                    <hr>
 							
-                    <fieldset>
+                    <!-- <fieldset> -->
+                        <!-- I am having trouble styling this form!!  -->
                     
                         <legend>Name</legend>
                         
                             <div>
                             
                                 <!-- <label for= "Name">* Name</label> -->
-                                <input type= "text" name = "Name" id= "Name" maxlength= "75"
-                                    required= "required" autofocus= "autofocus"><br>
+                                <input class="input" type= "text" name = "Name" id= "Name" maxlength= "30"
+                                    size= "300" required= "required" autofocus= "autofocus"><br>
                                     
-                                
-                                    
-                               
-                                    
-                               
+                             
                             </div>
 
                             <legend>Email:</legend>
 
                              <!-- <label for= "myEmail">* E-mail</label> -->
-                             <input type= "email" name = "myEmail" id= "myEmail" maxlength="25"
+                             <input class="input" size="300" type= "email" name = "myEmail" id= "myEmail" maxlength="125"
                              required= "required" placeholder = "example.domainName.com"><br>
                             
-                    </fieldset>
+                    <!-- </fieldset> -->
                     
-                    <fieldset>
+                    <!-- <fieldset> -->
                     
                         <legend>Message:</legend>
                         
-                            <br>
+                        
                             
-                            <textarea name= "message" id="message" cols= "50" rows= "5" maxlength= "200"
+                            <textarea class="msg" name= "message" id="message" cols= "50" rows= "5" maxlength= "200"
                                 placeholder= "send a message here..."></textarea><br><br>
                             
                             
-                    </fieldset>
+                    <!-- </fieldset> -->
                     
                     <input class= "button" type= "submit" value= "Submit">&nbsp;&nbsp;
-                    <input  class = "button" type= "reset">
+                    
                         
                     
           </form>
+
+          </div>
+
+          <div class="rfloat aside">
+
+                <h2 class="color1">Connect with Me</h2>
+
+                <hr>
+
+                <div class="adjust">
+
+                    <a href="https://github.com/jdublu416"><img src= "assets/images/github-128.png" height= "50" width="50" alt="github icon"></a>
+
+                    <a href="https://linkedin.com/in/janet-warren-21ab759b"><img src= "assets/images/linkedin.png" alt="linked in icon" height= "50" width="50"></a>
+
+                    <a href="https://stackoverflow.com"><img src= "assets/images/overflow.png" alt="stacked overflow icon" height= "50" width="50"></a>
+                </div>
+
+            </div>
 
 
 
